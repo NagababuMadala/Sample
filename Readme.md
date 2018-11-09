@@ -26,3 +26,10 @@ Embedded Tomcat
 **Step 3**: Open browser and verify Swagger
 
       http://localhost:8080/swagger-ui.html
+Lombock
+-------
+Use javap -c Profile.class in target path to check the fields
+
+Hit the EndPoints
+----------------
+http://localhost:8080/api/employee/

@@ -1,19 +1,18 @@
-package com.basic.example.service.api;
+package com.basic.example.repository.api;
 
 import com.basic.example.dto.Profile;
 
-import java.util.List;
-
-public interface ProfileDataService {
+public interface ProfileCustomRepository {
 
     void saveEmployeeProfileDetails(Profile profile);
+
+    Profile getEmployeeProfileDetails(long id);
 
     void updateEmployeeProfileDetails(Profile profile);
 
     void removeEmployeeProfileDetails(long eid);
 
-    Profile getEmployeeProfileDetails(long id);
-
     long getEmployeeHighestID();
 
+    void clearCache() ;
 }
